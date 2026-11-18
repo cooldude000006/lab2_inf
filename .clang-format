@@ -1,0 +1,51 @@
+# Оформление кода по разделу «Правила оформления кода» в PLAN.md
+# (правила Голуба 29–43). В CLion: Ctrl+Alt+L форматирует файл.
+Language: Cpp
+BasedOnStyle: LLVM
+Standard: c++17
+
+# Отступ 4 пробела, без табуляций (правило 40).
+IndentWidth: 4
+TabWidth: 4
+UseTab: Never
+AccessModifierOffset: -4
+IndentCaseLabels: true
+NamespaceIndentation: None
+ColumnLimit: 100
+
+# Фигурные скобки на отдельной строке, выровнены по вертикали (правило 42).
+BreakBeforeBraces: Allman
+
+# Один оператор в строке (правило 33): никаких однострочных тел.
+AllowShortFunctionsOnASingleLine: None
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: false
+AllowShortBlocksOnASingleLine: Never
+AllowShortCaseLabelsOnASingleLine: false
+AllowShortLambdasOnASingleLine: Empty
+
+# Длинные выражения переносятся перед операцией (правило 35).
+BreakBeforeBinaryOperators: NonAssignment
+BreakBeforeTernaryOperators: true
+
+# Аккуратные столбцы (правила 29–30).
+AlignTrailingComments: true
+AlignConsecutiveMacros: Consecutive
+AlignEscapedNewlines: Left
+
+AlwaysBreakTemplateDeclarations: Yes
+PointerAlignment: Left
+ReferenceAlignment: Left
+SpaceBeforeParens: ControlStatements
+FixNamespaceComments: true
+MaxEmptyLinesToKeep: 1
+KeepEmptyLinesAtTheStartOfBlocks: false
+
+# Сначала системные заголовки, потом свои.
+SortIncludes: CaseSensitive
+IncludeBlocks: Regroup
+IncludeCategories:
+  - Regex: '^<.*>'
+    Priority: 1
+  - Regex: '^".*"'
+    Priority: 2

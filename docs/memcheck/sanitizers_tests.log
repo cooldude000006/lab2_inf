@@ -1,0 +1,517 @@
+Running main() from /mnt/c/инфа 2 сем/Lab2/build/asan/_deps/googletest-src/googletest/src/gtest_main.cc
+[==========] Running 200 tests from 37 test suites.
+[----------] Global test environment set-up.
+[----------] 5 tests from ArraySequenceCreate
+[ RUN      ] ArraySequenceCreate.DefaultIsEmpty
+[       OK ] ArraySequenceCreate.DefaultIsEmpty (0 ms)
+[ RUN      ] ArraySequenceCreate.FromArrayCopiesElements
+[       OK ] ArraySequenceCreate.FromArrayCopiesElements (0 ms)
+[ RUN      ] ArraySequenceCreate.FromNullArrayWithZeroCountIsEmpty
+[       OK ] ArraySequenceCreate.FromNullArrayWithZeroCountIsEmpty (0 ms)
+[ RUN      ] ArraySequenceCreate.FromNullArrayWithPositiveCountThrows
+[       OK ] ArraySequenceCreate.FromNullArrayWithPositiveCountThrows (1 ms)
+[ RUN      ] ArraySequenceCreate.FromInitializerList
+[       OK ] ArraySequenceCreate.FromInitializerList (0 ms)
+[----------] 5 tests from ArraySequenceCreate (9 ms total)
+
+[----------] 5 tests from ArraySequenceRead
+[ RUN      ] ArraySequenceRead.GetFirstLast
+[       OK ] ArraySequenceRead.GetFirstLast (0 ms)
+[ RUN      ] ArraySequenceRead.GetOutOfRangeThrows
+[       OK ] ArraySequenceRead.GetOutOfRangeThrows (0 ms)
+[ RUN      ] ArraySequenceRead.EmptySequenceAccessThrows
+[       OK ] ArraySequenceRead.EmptySequenceAccessThrows (0 ms)
+[ RUN      ] ArraySequenceRead.SubsequenceInclusiveBounds
+[       OK ] ArraySequenceRead.SubsequenceInclusiveBounds (0 ms)
+[ RUN      ] ArraySequenceRead.SubsequenceInvalidBoundsThrow
+[       OK ] ArraySequenceRead.SubsequenceInvalidBoundsThrow (0 ms)
+[----------] 5 tests from ArraySequenceRead (8 ms total)
+
+[----------] 12 tests from ArraySequenceModify
+[ RUN      ] ArraySequenceModify.AppendManyElementsGrowsCapacity
+[       OK ] ArraySequenceModify.AppendManyElementsGrowsCapacity (1 ms)
+[ RUN      ] ArraySequenceModify.PrependReversesOrder
+[       OK ] ArraySequenceModify.PrependReversesOrder (0 ms)
+[ RUN      ] ArraySequenceModify.InsertAtBeginningMiddleEnd
+[       OK ] ArraySequenceModify.InsertAtBeginningMiddleEnd (0 ms)
+[ RUN      ] ArraySequenceModify.InsertAtBeyondLengthThrows
+[       OK ] ArraySequenceModify.InsertAtBeyondLengthThrows (0 ms)
+[ RUN      ] ArraySequenceModify.AppendOwnElementWhenFull
+[       OK ] ArraySequenceModify.AppendOwnElementWhenFull (0 ms)
+[ RUN      ] ArraySequenceModify.InsertOwnElementIntoMiddle
+[       OK ] ArraySequenceModify.InsertOwnElementIntoMiddle (0 ms)
+[ RUN      ] ArraySequenceModify.RemoveAtFirstMiddleLast
+[       OK ] ArraySequenceModify.RemoveAtFirstMiddleLast (0 ms)
+[ RUN      ] ArraySequenceModify.RemoveAtInvalidIndexThrows
+[       OK ] ArraySequenceModify.RemoveAtInvalidIndexThrows (0 ms)
+[ RUN      ] ArraySequenceModify.SetReplacesElement
+[       OK ] ArraySequenceModify.SetReplacesElement (0 ms)
+[ RUN      ] ArraySequenceModify.MutableGetChangesElementInPlace
+[       OK ] ArraySequenceModify.MutableGetChangesElementInPlace (0 ms)
+[ RUN      ] ArraySequenceModify.ClearKeepsCapacity
+[       OK ] ArraySequenceModify.ClearKeepsCapacity (0 ms)
+[ RUN      ] ArraySequenceModify.ReserveDoesNotChangeLength
+[       OK ] ArraySequenceModify.ReserveDoesNotChangeLength (0 ms)
+[----------] 12 tests from ArraySequenceModify (19 ms total)
+
+[----------] 6 tests from ArraySequenceCopy
+[ RUN      ] ArraySequenceCopy.CopyIsIndependent
+[       OK ] ArraySequenceCopy.CopyIsIndependent (0 ms)
+[ RUN      ] ArraySequenceCopy.CopyAssignment
+[       OK ] ArraySequenceCopy.CopyAssignment (0 ms)
+[ RUN      ] ArraySequenceCopy.SelfAssignment
+[       OK ] ArraySequenceCopy.SelfAssignment (0 ms)
+[ RUN      ] ArraySequenceCopy.MoveLeavesSourceEmpty
+[       OK ] ArraySequenceCopy.MoveLeavesSourceEmpty (0 ms)
+[ RUN      ] ArraySequenceCopy.MoveAssignment
+[       OK ] ArraySequenceCopy.MoveAssignment (0 ms)
+[ RUN      ] ArraySequenceCopy.EmptyCopy
+[       OK ] ArraySequenceCopy.EmptyCopy (0 ms)
+[----------] 6 tests from ArraySequenceCopy (10 ms total)
+
+[----------] 1 test from ArraySequenceCompare
+[ RUN      ] ArraySequenceCompare.Equality
+[       OK ] ArraySequenceCompare.Equality (0 ms)
+[----------] 1 test from ArraySequenceCompare (2 ms total)
+
+[----------] 2 tests from Exceptions
+[ RUN      ] Exceptions.AllDeriveFromLab2Error
+[       OK ] Exceptions.AllDeriveFromLab2Error (0 ms)
+[ RUN      ] Exceptions.CaughtAsBaseKeepsMessage
+[       OK ] Exceptions.CaughtAsBaseKeepsMessage (1 ms)
+[----------] 2 tests from Exceptions (6 ms total)
+
+[----------] 2 tests from PairTest
+[ RUN      ] PairTest.EqualityComparesKeyAndValue
+[       OK ] PairTest.EqualityComparesKeyAndValue (0 ms)
+[ RUN      ] PairTest.KeyLessIgnoresValue
+[       OK ] PairTest.KeyLessIgnoresValue (0 ms)
+[----------] 2 tests from PairTest (2 ms total)
+
+[----------] 1 test from CompareTest
+[ RUN      ] CompareTest.LessUsesOperatorLess
+[       OK ] CompareTest.LessUsesOperatorLess (0 ms)
+[----------] 1 test from CompareTest (2 ms total)
+
+[----------] 1 test from Interfaces
+[ RUN      ] Interfaces.AreAbstractWithVirtualDestructor
+[       OK ] Interfaces.AreAbstractWithVirtualDestructor (0 ms)
+[----------] 1 test from Interfaces (1 ms total)
+
+[----------] 5 tests from SortedSequenceAdd
+[ RUN      ] SortedSequenceAdd.KeepsAscendingOrder
+[       OK ] SortedSequenceAdd.KeepsAscendingOrder (1 ms)
+[ RUN      ] SortedSequenceAdd.EqualElementsKeepInsertionOrder
+[       OK ] SortedSequenceAdd.EqualElementsKeepInsertionOrder (0 ms)
+[ RUN      ] SortedSequenceAdd.InsertReturnsPosition
+[       OK ] SortedSequenceAdd.InsertReturnsPosition (0 ms)
+[ RUN      ] SortedSequenceAdd.CustomCompareGivesDescendingOrder
+[       OK ] SortedSequenceAdd.CustomCompareGivesDescendingOrder (0 ms)
+[ RUN      ] SortedSequenceAdd.RandomDataMatchesStdSort
+[       OK ] SortedSequenceAdd.RandomDataMatchesStdSort (2 ms)
+[----------] 5 tests from SortedSequenceAdd (11 ms total)
+
+[----------] 5 tests from SortedSequenceBounds
+[ RUN      ] SortedSequenceBounds.PresentElementWithDuplicates
+[       OK ] SortedSequenceBounds.PresentElementWithDuplicates (0 ms)
+[ RUN      ] SortedSequenceBounds.AbsentElementBetween
+[       OK ] SortedSequenceBounds.AbsentElementBetween (0 ms)
+[ RUN      ] SortedSequenceBounds.BelowAndAboveAll
+[       OK ] SortedSequenceBounds.BelowAndAboveAll (0 ms)
+[ RUN      ] SortedSequenceBounds.EmptySequence
+[       OK ] SortedSequenceBounds.EmptySequence (0 ms)
+[ RUN      ] SortedSequenceBounds.MatchStdBoundsOnRandomData
+[       OK ] SortedSequenceBounds.MatchStdBoundsOnRandomData (0 ms)
+[----------] 5 tests from SortedSequenceBounds (8 ms total)
+
+[----------] 3 tests from SortedSequenceFind
+[ RUN      ] SortedSequenceFind.IndexOfReturnsFirstOfEqual
+[       OK ] SortedSequenceFind.IndexOfReturnsFirstOfEqual (0 ms)
+[ RUN      ] SortedSequenceFind.IndexOfMissingIsNotFound
+[       OK ] SortedSequenceFind.IndexOfMissingIsNotFound (0 ms)
+[ RUN      ] SortedSequenceFind.StringsInDictionaryOrder
+[       OK ] SortedSequenceFind.StringsInDictionaryOrder (0 ms)
+[----------] 3 tests from SortedSequenceFind (3 ms total)
+
+[----------] 4 tests from SortedSequenceRange
+[ RUN      ] SortedSequenceRange.InclusiveBounds
+[       OK ] SortedSequenceRange.InclusiveBounds (0 ms)
+[ RUN      ] SortedSequenceRange.BoundsNotPresent
+[       OK ] SortedSequenceRange.BoundsNotPresent (0 ms)
+[ RUN      ] SortedSequenceRange.SinglePointAndEmptyResult
+[       OK ] SortedSequenceRange.SinglePointAndEmptyResult (0 ms)
+[ RUN      ] SortedSequenceRange.ReversedBoundsThrow
+[       OK ] SortedSequenceRange.ReversedBoundsThrow (0 ms)
+[----------] 4 tests from SortedSequenceRange (5 ms total)
+
+[----------] 5 tests from SortedSequenceModify
+[ RUN      ] SortedSequenceModify.RemoveAtKeepsOrder
+[       OK ] SortedSequenceModify.RemoveAtKeepsOrder (0 ms)
+[ RUN      ] SortedSequenceModify.AccessToEmptyThrows
+[       OK ] SortedSequenceModify.AccessToEmptyThrows (0 ms)
+[ RUN      ] SortedSequenceModify.SubsequenceStaysSorted
+[       OK ] SortedSequenceModify.SubsequenceStaysSorted (0 ms)
+[ RUN      ] SortedSequenceModify.ClearAndReuse
+[       OK ] SortedSequenceModify.ClearAndReuse (0 ms)
+[ RUN      ] SortedSequenceModify.WorksThroughInterface
+[       OK ] SortedSequenceModify.WorksThroughInterface (0 ms)
+[----------] 5 tests from SortedSequenceModify (7 ms total)
+
+[----------] 7 tests from AvlTreeInsert
+[ RUN      ] AvlTreeInsert.EmptyTree
+[       OK ] AvlTreeInsert.EmptyTree (0 ms)
+[ RUN      ] AvlTreeInsert.SmallRightRotation
+[       OK ] AvlTreeInsert.SmallRightRotation (0 ms)
+[ RUN      ] AvlTreeInsert.SmallLeftRotation
+[       OK ] AvlTreeInsert.SmallLeftRotation (0 ms)
+[ RUN      ] AvlTreeInsert.BigRightRotation
+[       OK ] AvlTreeInsert.BigRightRotation (0 ms)
+[ RUN      ] AvlTreeInsert.BigLeftRotation
+[       OK ] AvlTreeInsert.BigLeftRotation (0 ms)
+[ RUN      ] AvlTreeInsert.DuplicateIsIgnored
+[       OK ] AvlTreeInsert.DuplicateIsIgnored (0 ms)
+[ RUN      ] AvlTreeInsert.SortedInputStaysBalanced
+[       OK ] AvlTreeInsert.SortedInputStaysBalanced (39 ms)
+[----------] 7 tests from AvlTreeInsert (49 ms total)
+
+[----------] 4 tests from AvlTreeRemove
+[ RUN      ] AvlTreeRemove.LeafNodeWithOneChildAndWithTwoChildren
+[       OK ] AvlTreeRemove.LeafNodeWithOneChildAndWithTwoChildren (0 ms)
+[ RUN      ] AvlTreeRemove.SingleNodeAndReinsert
+[       OK ] AvlTreeRemove.SingleNodeAndReinsert (0 ms)
+[ RUN      ] AvlTreeRemove.MissingThrowsAndKeepsTree
+[       OK ] AvlTreeRemove.MissingThrowsAndKeepsTree (0 ms)
+[ RUN      ] AvlTreeRemove.RebalancesAfterRemoval
+[       OK ] AvlTreeRemove.RebalancesAfterRemoval (0 ms)
+[----------] 4 tests from AvlTreeRemove (7 ms total)
+
+[----------] 5 tests from AvlTreeFind
+[ RUN      ] AvlTreeFind.FindAndContains
+[       OK ] AvlTreeFind.FindAndContains (0 ms)
+[ RUN      ] AvlTreeFind.FindForUpdateChangesValueNotKey
+[       OK ] AvlTreeFind.FindForUpdateChangesValueNotKey (0 ms)
+[ RUN      ] AvlTreeFind.RangeInclusiveAndBoundsNotPresent
+[       OK ] AvlTreeFind.RangeInclusiveAndBoundsNotPresent (0 ms)
+[ RUN      ] AvlTreeFind.RangeEmptyAndReversed
+[       OK ] AvlTreeFind.RangeEmptyAndReversed (0 ms)
+[ RUN      ] AvlTreeFind.CustomCompareAndStrings
+[       OK ] AvlTreeFind.CustomCompareAndStrings (0 ms)
+[----------] 5 tests from AvlTreeFind (7 ms total)
+
+[----------] 1 test from AvlTreeRandom
+[ RUN      ] AvlTreeRandom.MatchesStdSetAndKeepsInvariants
+[       OK ] AvlTreeRandom.MatchesStdSetAndKeepsInvariants (48 ms)
+[----------] 1 test from AvlTreeRandom (49 ms total)
+
+[----------] 4 tests from AvlTreeCopy
+[ RUN      ] AvlTreeCopy.CopyIsDeepAndIndependent
+[       OK ] AvlTreeCopy.CopyIsDeepAndIndependent (0 ms)
+[ RUN      ] AvlTreeCopy.AssignmentAndSelfAssignment
+[       OK ] AvlTreeCopy.AssignmentAndSelfAssignment (0 ms)
+[ RUN      ] AvlTreeCopy.MoveLeavesSourceEmpty
+[       OK ] AvlTreeCopy.MoveLeavesSourceEmpty (0 ms)
+[ RUN      ] AvlTreeCopy.ClearAndReuse
+[       OK ] AvlTreeCopy.ClearAndReuse (0 ms)
+[----------] 4 tests from AvlTreeCopy (6 ms total)
+
+[----------] 3 tests from TreeBuilderTest
+[ RUN      ] TreeBuilderTest.BuildsFromSequenceSkippingDuplicates
+[       OK ] TreeBuilderTest.BuildsFromSequenceSkippingDuplicates (0 ms)
+[ RUN      ] TreeBuilderTest.BuildsFromArrayAndRejectsNull
+[       OK ] TreeBuilderTest.BuildsFromArrayAndRejectsNull (0 ms)
+[ RUN      ] TreeBuilderTest.UsesGivenCompare
+[       OK ] TreeBuilderTest.UsesGivenCompare (0 ms)
+[----------] 3 tests from TreeBuilderTest (3 ms total)
+
+[----------] 11 tests from DictionaryTest/0, where TypeParam = (anonymous namespace)::DictionaryKind<SortedSequenceDictionary>
+[ RUN      ] DictionaryTest/0.AddGetContainsCount
+[       OK ] DictionaryTest/0.AddGetContainsCount (1 ms)
+[ RUN      ] DictionaryTest/0.EmptyDictionary
+[       OK ] DictionaryTest/0.EmptyDictionary (0 ms)
+[ RUN      ] DictionaryTest/0.DuplicateKeyThrowsAndKeepsValue
+[       OK ] DictionaryTest/0.DuplicateKeyThrowsAndKeepsValue (0 ms)
+[ RUN      ] DictionaryTest/0.MissingKeyThrows
+[       OK ] DictionaryTest/0.MissingKeyThrows (0 ms)
+[ RUN      ] DictionaryTest/0.MutableGetChangesValueInPlace
+[       OK ] DictionaryTest/0.MutableGetChangesValueInPlace (1 ms)
+[ RUN      ] DictionaryTest/0.RemoveAndReAdd
+[       OK ] DictionaryTest/0.RemoveAndReAdd (0 ms)
+[ RUN      ] DictionaryTest/0.KeysAscending
+[       OK ] DictionaryTest/0.KeysAscending (0 ms)
+[ RUN      ] DictionaryTest/0.RangeInclusive
+[       OK ] DictionaryTest/0.RangeInclusive (1 ms)
+[ RUN      ] DictionaryTest/0.ReversedRangeThrows
+[       OK ] DictionaryTest/0.ReversedRangeThrows (0 ms)
+[ RUN      ] DictionaryTest/0.WorksThroughInterface
+[       OK ] DictionaryTest/0.WorksThroughInterface (0 ms)
+[ RUN      ] DictionaryTest/0.RandomOperationsMatchStdMap
+[       OK ] DictionaryTest/0.RandomOperationsMatchStdMap (9 ms)
+[----------] 11 tests from DictionaryTest/0 (32 ms total)
+
+[----------] 11 tests from DictionaryTest/1, where TypeParam = (anonymous namespace)::DictionaryKind<TreeDictionary>
+[ RUN      ] DictionaryTest/1.AddGetContainsCount
+[       OK ] DictionaryTest/1.AddGetContainsCount (0 ms)
+[ RUN      ] DictionaryTest/1.EmptyDictionary
+[       OK ] DictionaryTest/1.EmptyDictionary (0 ms)
+[ RUN      ] DictionaryTest/1.DuplicateKeyThrowsAndKeepsValue
+[       OK ] DictionaryTest/1.DuplicateKeyThrowsAndKeepsValue (0 ms)
+[ RUN      ] DictionaryTest/1.MissingKeyThrows
+[       OK ] DictionaryTest/1.MissingKeyThrows (0 ms)
+[ RUN      ] DictionaryTest/1.MutableGetChangesValueInPlace
+[       OK ] DictionaryTest/1.MutableGetChangesValueInPlace (0 ms)
+[ RUN      ] DictionaryTest/1.RemoveAndReAdd
+[       OK ] DictionaryTest/1.RemoveAndReAdd (0 ms)
+[ RUN      ] DictionaryTest/1.KeysAscending
+[       OK ] DictionaryTest/1.KeysAscending (0 ms)
+[ RUN      ] DictionaryTest/1.RangeInclusive
+[       OK ] DictionaryTest/1.RangeInclusive (0 ms)
+[ RUN      ] DictionaryTest/1.ReversedRangeThrows
+[       OK ] DictionaryTest/1.ReversedRangeThrows (0 ms)
+[ RUN      ] DictionaryTest/1.WorksThroughInterface
+[       OK ] DictionaryTest/1.WorksThroughInterface (0 ms)
+[ RUN      ] DictionaryTest/1.RandomOperationsMatchStdMap
+[       OK ] DictionaryTest/1.RandomOperationsMatchStdMap (8 ms)
+[----------] 11 tests from DictionaryTest/1 (25 ms total)
+
+[----------] 1 test from TreeDictionarySpecific
+[ RUN      ] TreeDictionarySpecific.HeightStaysLogarithmic
+[       OK ] TreeDictionarySpecific.HeightStaysLogarithmic (7 ms)
+[----------] 1 test from TreeDictionarySpecific (8 ms total)
+
+[----------] 6 tests from TextUtils
+[ RUN      ] TextUtils.Trim
+[       OK ] TextUtils.Trim (0 ms)
+[ RUN      ] TextUtils.ParseIntegerValid
+[       OK ] TextUtils.ParseIntegerValid (1 ms)
+[ RUN      ] TextUtils.ParseIntegerInvalid
+[       OK ] TextUtils.ParseIntegerInvalid (0 ms)
+[ RUN      ] TextUtils.ParseIntegerMessageNamesField
+[       OK ] TextUtils.ParseIntegerMessageNamesField (0 ms)
+[ RUN      ] TextUtils.FirstUtf8Character
+[       OK ] TextUtils.FirstUtf8Character (0 ms)
+[ RUN      ] TextUtils.Utf8LengthAndPadding
+[       OK ] TextUtils.Utf8LengthAndPadding (0 ms)
+[----------] 6 tests from TextUtils (10 ms total)
+
+[----------] 3 tests from MergeSortTest
+[ RUN      ] MergeSortTest.EmptyAndSingle
+[       OK ] MergeSortTest.EmptyAndSingle (0 ms)
+[ RUN      ] MergeSortTest.SortedReversedAndRandomMatchStdSort
+[       OK ] MergeSortTest.SortedReversedAndRandomMatchStdSort (11 ms)
+[ RUN      ] MergeSortTest.IsStable
+[       OK ] MergeSortTest.IsStable (0 ms)
+[----------] 3 tests from MergeSortTest (16 ms total)
+
+[----------] 5 tests from PersonTest
+[ RUN      ] PersonTest.FieldsAndDerivedNames
+[       OK ] PersonTest.FieldsAndDerivedNames (3 ms)
+[ RUN      ] PersonTest.WithoutMiddleName
+[       OK ] PersonTest.WithoutMiddleName (0 ms)
+[ RUN      ] PersonTest.Age
+[       OK ] PersonTest.Age (0 ms)
+[ RUN      ] PersonTest.InvalidFieldsThrow
+[       OK ] PersonTest.InvalidFieldsThrow (0 ms)
+[ RUN      ] PersonTest.Equality
+[       OK ] PersonTest.Equality (0 ms)
+[----------] 5 tests from PersonTest (11 ms total)
+
+[----------] 2 tests from AttributeValueTest
+[ RUN      ] AttributeValueTest.OrderAndEquality
+[       OK ] AttributeValueTest.OrderAndEquality (0 ms)
+[ RUN      ] AttributeValueTest.AccessByKind
+[       OK ] AttributeValueTest.AccessByKind (1 ms)
+[----------] 2 tests from AttributeValueTest (5 ms total)
+
+[----------] 2 tests from CompositeKeyTest
+[ RUN      ] CompositeKeyTest.LexicographicOrder
+[       OK ] CompositeKeyTest.LexicographicOrder (0 ms)
+[ RUN      ] CompositeKeyTest.ToString
+[       OK ] CompositeKeyTest.ToString (0 ms)
+[----------] 2 tests from CompositeKeyTest (2 ms total)
+
+[----------] 4 tests from AttributeTest
+[ RUN      ] AttributeTest.ExtractAllAttributes
+[       OK ] AttributeTest.ExtractAllAttributes (0 ms)
+[ RUN      ] AttributeTest.AgeNeedsYear
+[       OK ] AttributeTest.AgeNeedsYear (0 ms)
+[ RUN      ] AttributeTest.KindsAndNames
+[       OK ] AttributeTest.KindsAndNames (0 ms)
+[ RUN      ] AttributeTest.Parse
+[       OK ] AttributeTest.Parse (0 ms)
+[----------] 4 tests from AttributeTest (5 ms total)
+
+[----------] 4 tests from CompositeAttributeTest
+[ RUN      ] CompositeAttributeTest.MakeKeyAndName
+[       OK ] CompositeAttributeTest.MakeKeyAndName (0 ms)
+[ RUN      ] CompositeAttributeTest.InvalidSetsThrow
+[       OK ] CompositeAttributeTest.InvalidSetsThrow (0 ms)
+[ RUN      ] CompositeAttributeTest.ParseKey
+[       OK ] CompositeAttributeTest.ParseKey (0 ms)
+[ RUN      ] CompositeAttributeTest.CheckKey
+[       OK ] CompositeAttributeTest.CheckKey (0 ms)
+[----------] 4 tests from CompositeAttributeTest (6 ms total)
+
+[----------] 5 tests from DatabaseTest
+[ RUN      ] DatabaseTest.AddPersonUpdatesAllIndexes
+[       OK ] DatabaseTest.AddPersonUpdatesAllIndexes (2 ms)
+[ RUN      ] DatabaseTest.RejectedPersonChangesNothing
+[       OK ] DatabaseTest.RejectedPersonChangesNothing (0 ms)
+[ RUN      ] DatabaseTest.ReplacePeopleRebuildsIndexes
+[       OK ] DatabaseTest.ReplacePeopleRebuildsIndexes (18 ms)
+[ RUN      ] DatabaseTest.FailedReplaceKeepsOldState
+[       OK ] DatabaseTest.FailedReplaceKeepsOldState (0 ms)
+[ RUN      ] DatabaseTest.RemoveIndex
+[       OK ] DatabaseTest.RemoveIndex (0 ms)
+[----------] 5 tests from DatabaseTest (30 ms total)
+
+[----------] 6 tests from GeneratorTest
+[ RUN      ] GeneratorTest.CountIdsAndYears
+[       OK ] GeneratorTest.CountIdsAndYears (15 ms)
+[ RUN      ] GeneratorTest.SameSeedSameData
+[       OK ] GeneratorTest.SameSeedSameData (10 ms)
+[ RUN      ] GeneratorTest.GenderIsConsistent
+[       OK ] GeneratorTest.GenderIsConsistent (9 ms)
+[ RUN      ] GeneratorTest.OrderedByAttribute
+[       OK ] GeneratorTest.OrderedByAttribute (94 ms)
+[ RUN      ] GeneratorTest.RandomOrderIsShuffledPermutation
+[       OK ] GeneratorTest.RandomOrderIsShuffledPermutation (16 ms)
+[ RUN      ] GeneratorTest.InvalidArguments
+[       OK ] GeneratorTest.InvalidArguments (0 ms)
+[----------] 6 tests from GeneratorTest (157 ms total)
+
+[----------] 6 tests from CsvTest
+[ RUN      ] CsvTest.RoundTrip
+[       OK ] CsvTest.RoundTrip (5 ms)
+[ RUN      ] CsvTest.HeaderOptionalBlankLinesAndCrlf
+[       OK ] CsvTest.HeaderOptionalBlankLinesAndCrlf (0 ms)
+[ RUN      ] CsvTest.EmptyInput
+[       OK ] CsvTest.EmptyInput (0 ms)
+[ RUN      ] CsvTest.ErrorsReportLineNumber
+[       OK ] CsvTest.ErrorsReportLineNumber (0 ms)
+[ RUN      ] CsvTest.FileRoundTripWithCyrillicPath
+[       OK ] CsvTest.FileRoundTripWithCyrillicPath (4 ms)
+[ RUN      ] CsvTest.MissingFileThrows
+[       OK ] CsvTest.MissingFileThrows (0 ms)
+[----------] 6 tests from CsvTest (20 ms total)
+
+[----------] 5 tests from BenchmarkTest
+[ RUN      ] BenchmarkTest.MedianOddEvenAndEmpty
+[       OK ] BenchmarkTest.MedianOddEvenAndEmpty (0 ms)
+[ RUN      ] BenchmarkTest.OneMeasurementPerCombination
+[       OK ] BenchmarkTest.OneMeasurementPerCombination (153 ms)
+[ RUN      ] BenchmarkTest.QuadraticBuildSkippedAboveLimit
+[       OK ] BenchmarkTest.QuadraticBuildSkippedAboveLimit (154 ms)
+[ RUN      ] BenchmarkTest.InvalidConfigThrows
+[       OK ] BenchmarkTest.InvalidConfigThrows (0 ms)
+[ RUN      ] BenchmarkTest.CsvHasHeaderAndRow
+[       OK ] BenchmarkTest.CsvHasHeaderAndRow (0 ms)
+[----------] 5 tests from BenchmarkTest (315 ms total)
+
+[----------] 4 tests from ConsoleIOTest
+[ RUN      ] ConsoleIOTest.ReadIntRepeatsUntilValid
+[       OK ] ConsoleIOTest.ReadIntRepeatsUntilValid (1 ms)
+[ RUN      ] ConsoleIOTest.DefaultsAndYesNo
+[       OK ] ConsoleIOTest.DefaultsAndYesNo (0 ms)
+[ RUN      ] ConsoleIOTest.IntListWithSeparatorsAndRetry
+[       OK ] ConsoleIOTest.IntListWithSeparatorsAndRetry (0 ms)
+[ RUN      ] ConsoleIOTest.EndOfInputThrowsInputEnded
+[       OK ] ConsoleIOTest.EndOfInputThrowsInputEnded (0 ms)
+[----------] 4 tests from ConsoleIOTest (7 ms total)
+
+[----------] 8 tests from ConsoleUITest
+[ RUN      ] ConsoleUITest.ExitAndEndOfInput
+[       OK ] ConsoleUITest.ExitAndEndOfInput (1 ms)
+[ RUN      ] ConsoleUITest.InvalidMenuInputDoesNotBreak
+[       OK ] ConsoleUITest.InvalidMenuInputDoesNotBreak (0 ms)
+[ RUN      ] ConsoleUITest.GenerateBuildIndexAndSearchByKey
+[       OK ] ConsoleUITest.GenerateBuildIndexAndSearchByKey (21 ms)
+[ RUN      ] ConsoleUITest.RangeSearchWithCompositeKeyAndBadValue
+[       OK ] ConsoleUITest.RangeSearchWithCompositeKeyAndBadValue (30 ms)
+[ RUN      ] ConsoleUITest.ReversedRangeReportsError
+[       OK ] ConsoleUITest.ReversedRangeReportsError (3 ms)
+[ RUN      ] ConsoleUITest.AddPersonUpdatesIndex
+[       OK ] ConsoleUITest.AddPersonUpdatesIndex (1 ms)
+[ RUN      ] ConsoleUITest.CompareMethodsPrintsAllMethods
+[       OK ] ConsoleUITest.CompareMethodsPrintsAllMethods (156 ms)
+[ RUN      ] ConsoleUITest.MissingFileReportsError
+[       OK ] ConsoleUITest.MissingFileReportsError (1 ms)
+[----------] 8 tests from ConsoleUITest (230 ms total)
+
+[----------] 36 tests from AllMethods/IndexTest
+[ RUN      ] AllMethods/IndexTest.FindMatchesLinearForEveryPersonKey/Linear
+[       OK ] AllMethods/IndexTest.FindMatchesLinearForEveryPersonKey/Linear (2271 ms)
+[ RUN      ] AllMethods/IndexTest.FindMatchesLinearForEveryPersonKey/BinarySearch
+[       OK ] AllMethods/IndexTest.FindMatchesLinearForEveryPersonKey/BinarySearch (1934 ms)
+[ RUN      ] AllMethods/IndexTest.FindMatchesLinearForEveryPersonKey/Avl
+[       OK ] AllMethods/IndexTest.FindMatchesLinearForEveryPersonKey/Avl (1293 ms)
+[ RUN      ] AllMethods/IndexTest.RangeMatchesLinear/Linear
+[       OK ] AllMethods/IndexTest.RangeMatchesLinear/Linear (684 ms)
+[ RUN      ] AllMethods/IndexTest.RangeMatchesLinear/BinarySearch
+[       OK ] AllMethods/IndexTest.RangeMatchesLinear/BinarySearch (434 ms)
+[ RUN      ] AllMethods/IndexTest.RangeMatchesLinear/Avl
+[       OK ] AllMethods/IndexTest.RangeMatchesLinear/Avl (441 ms)
+[ RUN      ] AllMethods/IndexTest.StringRangeMatchesLinear/Linear
+[       OK ] AllMethods/IndexTest.StringRangeMatchesLinear/Linear (93 ms)
+[ RUN      ] AllMethods/IndexTest.StringRangeMatchesLinear/BinarySearch
+[       OK ] AllMethods/IndexTest.StringRangeMatchesLinear/BinarySearch (137 ms)
+[ RUN      ] AllMethods/IndexTest.StringRangeMatchesLinear/Avl
+[       OK ] AllMethods/IndexTest.StringRangeMatchesLinear/Avl (139 ms)
+[ RUN      ] AllMethods/IndexTest.ResultIsSortedByPosition/Linear
+[       OK ] AllMethods/IndexTest.ResultIsSortedByPosition/Linear (74 ms)
+[ RUN      ] AllMethods/IndexTest.ResultIsSortedByPosition/BinarySearch
+[       OK ] AllMethods/IndexTest.ResultIsSortedByPosition/BinarySearch (91 ms)
+[ RUN      ] AllMethods/IndexTest.ResultIsSortedByPosition/Avl
+[       OK ] AllMethods/IndexTest.ResultIsSortedByPosition/Avl (101 ms)
+[ RUN      ] AllMethods/IndexTest.MissingKeyGivesEmptyResult/Linear
+[       OK ] AllMethods/IndexTest.MissingKeyGivesEmptyResult/Linear (81 ms)
+[ RUN      ] AllMethods/IndexTest.MissingKeyGivesEmptyResult/BinarySearch
+[       OK ] AllMethods/IndexTest.MissingKeyGivesEmptyResult/BinarySearch (93 ms)
+[ RUN      ] AllMethods/IndexTest.MissingKeyGivesEmptyResult/Avl
+[       OK ] AllMethods/IndexTest.MissingKeyGivesEmptyResult/Avl (91 ms)
+[ RUN      ] AllMethods/IndexTest.EmptyCollection/Linear
+[       OK ] AllMethods/IndexTest.EmptyCollection/Linear (61 ms)
+[ RUN      ] AllMethods/IndexTest.EmptyCollection/BinarySearch
+[       OK ] AllMethods/IndexTest.EmptyCollection/BinarySearch (59 ms)
+[ RUN      ] AllMethods/IndexTest.EmptyCollection/Avl
+[       OK ] AllMethods/IndexTest.EmptyCollection/Avl (61 ms)
+[ RUN      ] AllMethods/IndexTest.AllRecordsWithSameKey/Linear
+[       OK ] AllMethods/IndexTest.AllRecordsWithSameKey/Linear (60 ms)
+[ RUN      ] AllMethods/IndexTest.AllRecordsWithSameKey/BinarySearch
+[       OK ] AllMethods/IndexTest.AllRecordsWithSameKey/BinarySearch (63 ms)
+[ RUN      ] AllMethods/IndexTest.AllRecordsWithSameKey/Avl
+[       OK ] AllMethods/IndexTest.AllRecordsWithSameKey/Avl (61 ms)
+[ RUN      ] AllMethods/IndexTest.WrongKeyAndReversedRangeThrow/Linear
+[       OK ] AllMethods/IndexTest.WrongKeyAndReversedRangeThrow/Linear (62 ms)
+[ RUN      ] AllMethods/IndexTest.WrongKeyAndReversedRangeThrow/BinarySearch
+[       OK ] AllMethods/IndexTest.WrongKeyAndReversedRangeThrow/BinarySearch (88 ms)
+[ RUN      ] AllMethods/IndexTest.WrongKeyAndReversedRangeThrow/Avl
+[       OK ] AllMethods/IndexTest.WrongKeyAndReversedRangeThrow/Avl (91 ms)
+[ RUN      ] AllMethods/IndexTest.AgeBeforeBirthYearFails/Linear
+[       OK ] AllMethods/IndexTest.AgeBeforeBirthYearFails/Linear (60 ms)
+[ RUN      ] AllMethods/IndexTest.AgeBeforeBirthYearFails/BinarySearch
+[       OK ] AllMethods/IndexTest.AgeBeforeBirthYearFails/BinarySearch (60 ms)
+[ RUN      ] AllMethods/IndexTest.AgeBeforeBirthYearFails/Avl
+[       OK ] AllMethods/IndexTest.AgeBeforeBirthYearFails/Avl (63 ms)
+[ RUN      ] AllMethods/IndexTest.NullCollectionThrows/Linear
+[       OK ] AllMethods/IndexTest.NullCollectionThrows/Linear (61 ms)
+[ RUN      ] AllMethods/IndexTest.NullCollectionThrows/BinarySearch
+[       OK ] AllMethods/IndexTest.NullCollectionThrows/BinarySearch (62 ms)
+[ RUN      ] AllMethods/IndexTest.NullCollectionThrows/Avl
+[       OK ] AllMethods/IndexTest.NullCollectionThrows/Avl (60 ms)
+[ RUN      ] AllMethods/IndexTest.AddPositionUpdatesIndex/Linear
+[       OK ] AllMethods/IndexTest.AddPositionUpdatesIndex/Linear (63 ms)
+[ RUN      ] AllMethods/IndexTest.AddPositionUpdatesIndex/BinarySearch
+[       OK ] AllMethods/IndexTest.AddPositionUpdatesIndex/BinarySearch (60 ms)
+[ RUN      ] AllMethods/IndexTest.AddPositionUpdatesIndex/Avl
+[       OK ] AllMethods/IndexTest.AddPositionUpdatesIndex/Avl (61 ms)
+[ RUN      ] AllMethods/IndexTest.EntriesListAllKeys/Linear
+[       OK ] AllMethods/IndexTest.EntriesListAllKeys/Linear (63 ms)
+[ RUN      ] AllMethods/IndexTest.EntriesListAllKeys/BinarySearch
+[       OK ] AllMethods/IndexTest.EntriesListAllKeys/BinarySearch (88 ms)
+[ RUN      ] AllMethods/IndexTest.EntriesListAllKeys/Avl
+[       OK ] AllMethods/IndexTest.EntriesListAllKeys/Avl (91 ms)
+[----------] 36 tests from AllMethods/IndexTest (9439 ms total)
+
+[----------] Global test environment tear-down
+[==========] 200 tests from 37 test suites ran. (10610 ms total)
+[  PASSED  ] 200 tests.
